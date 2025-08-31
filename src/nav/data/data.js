@@ -52,8 +52,7 @@ export const categoriesDetails = [
   {
     id: 10,
     name: "Animals",
-    image:
-      "./img/categories/furniture-home-decor-47a1998de5f4a8a9e84702dcb40bb313.png",
+    image: "./img/categories/animals-476fa9caaf88a12dfbcd6db4c8c6f17a.png",
   },
   {
     id: 11,
