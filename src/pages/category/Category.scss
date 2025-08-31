@@ -1,14 +1,14 @@
 .category {
   width: 100%;
   margin-top: 3rem;
-  padding: 0 2rem;
+  // padding: 0 1.5rem;
   display: grid;
-  gap: 1.8rem;
+  gap: 1em;
   // grid-template-areas:
   //   "img img img img img img img img img"
   //   "name name name name name name name name name";
   cursor: pointer;
-  grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
   &__category-item {
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
     // align-items: center;
     justify-content: center;
     .imag-wraper--img {
-      max-width: 6rem;
+      max-width: 6em;
       height: 5rem;
       object-fit: cover;
       object-position: center;

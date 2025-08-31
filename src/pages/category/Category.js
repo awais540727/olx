@@ -2,7 +2,7 @@ import React from "react";
 import "./Category.scss";
 import { categoriesDetails } from "../../data/categoriesDetails.js";
 const Category = () => {
-  function trimName(name, maxLength = 20) {
+  function trimName(name, maxLength = 18) {
     return name.length > maxLength ? name.slice(0, maxLength) + "..." : name;
   }
   return (
