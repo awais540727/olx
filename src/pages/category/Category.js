@@ -2,7 +2,7 @@ import React from "react";
 import "./Category.scss";
 import { categoriesDetails } from "../../data/categoriesDetails.js";
 const Category = () => {
-  function trimName(name, maxLength = 18) {
+  function trimName(name, maxLength) {
     return name.length > maxLength ? name.slice(0, maxLength) + "..." : name;
   }
   return (
@@ -22,7 +22,7 @@ const Category = () => {
                 className="category__text--name"
                 // shortName={trimName(category.name)}
               >
-                {trimName(category.name, 20)}
+                {trimName(category.name, 18)}
               </span>
             </div>
           </div>

@@ -21,7 +21,8 @@
   }
 
   .container {
-    width: 100%;
+    max-width: 100%;
+    // width: 300px;
     display: grid;
     gap: 0.8em;
     grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
