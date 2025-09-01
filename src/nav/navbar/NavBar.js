@@ -26,7 +26,7 @@ const NavBar = () => {
             />
           </div>
           <div className="img_name">
-            <span className="name">motors</span>
+            <span className="name">Property</span>
           </div>
         </div>
         <div className="container__login-top">

@@ -8,9 +8,9 @@ const Layout = ({ children }) => {
   return (
     <>
       {children}
+      <SearchBar />
       <div className="layout">
         {/* <NavBar /> */}
-        <SearchBar />
         <Category />
         <MobilePhones />
       </div>

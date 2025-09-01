@@ -1,5 +1,5 @@
 .searchbar {
-  padding: 1.5em 1em;
+  padding: 1.5em 2em;
   max-width: 100%;
   // background-color: aqua;
   border-bottom: 1px solid gray;
@@ -77,14 +77,17 @@
       .dropdown-section {
         ul {
           list-style: none;
-        }
-        li {
-          text-transform: capitalize;
-          padding: 0.7em 0;
-          border-bottom: 1px solid rgb(230, 228, 228);
-          cursor: pointer;
-          &:hover {
-            background-color: #ebf1ff;
+          li {
+            text-transform: capitalize;
+            padding: 0.7em 0;
+            border-bottom: 1px solid rgb(230, 228, 228);
+            cursor: pointer;
+            &:hover {
+              background-color: #ebf1ff;
+            }
+            &:last-child {
+              border-bottom: none;
+            }
           }
         }
 

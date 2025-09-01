@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./SearchBar.scss";
-import LocationSelector from "./Location";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { FaMapMarkerAlt } from "react-icons/fa";
 const SearchBar = () => {
@@ -43,7 +42,7 @@ const SearchBar = () => {
                 setQuery(e.target.value);
                 setIsOpen(true);
               }}
-              placeholder="Search location..."
+              placeholder="Location"
             />
             {isOpen ? (
               <FiChevronUp className="arrow" />
