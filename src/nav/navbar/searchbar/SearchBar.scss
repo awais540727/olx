@@ -1,42 +1,112 @@
 .searchbar {
-  padding: 1.5em 0;
+  padding: 1.5em 1em;
   max-width: 100%;
-  //   background-color: aqua;
+  // background-color: aqua;
   border-bottom: 1px solid gray;
   display: flex;
   gap: 1em;
   &__location {
-    flex: 2;
     display: flex;
     align-items: center;
-    .location--input {
-      width: 100%;
-      padding: 1em;
-      border: 1px solid gray;
-      border-radius: 0.5em;
-      box-sizing: border-box;
-      &:focus {
-        outline: none;
-        border-color: #3a55ec;
-      }
+    padding: 0.7em 1em;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    justify-content: space-between;
+    cursor: text;
+    &:focus-within {
+      outline: none;
+      border-color: #3a55ec;
     }
-    .location {
-      position: relative;
-      //   background-color: #3a55ec;
-      .location--icon {
-        color: #3a55ec;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 0.9em;
+    .icon {
+      color: #3a77ff;
+    }
+    input {
+      border: none; /* Remove default browser border */
+      outline: none; /* Remove focus outline */
+      flex: 1; /* Take up available space in flexbox */
+      margin-left: 0.5em; /* Small gap after map icon */
+      font-size: 0.9em; /* Text size */
+      color: #333;
+    }
+    .arrow {
+      cursor: pointer;
+      margin-left: 0.5em;
+      font-size: 1.2em;
+    }
+  }
+  &__location-selector {
+    flex: 3;
+    position: relative;
+
+    .location-dropdown {
+      // height: 20vh;
+      padding: 0.6em 1em;
+      position: absolute;
+      width: 100%;
+      top: 110%;
+      background-color: white;
+      border: 1px solid rgb(240, 238, 238);
+      border-radius: 0.5em;
+      overflow-y: auto;
+      max-height: 240px;
+      // margin-top: 0.3em;
+
+      .dropdown-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5em;
+      }
+      .current-location {
+        cursor: pointer;
+        color: #3a77ff;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 0.9em;
+        display: flex;
+        align-items: centers;
+        gap: 0.4em;
+      }
+      .see-all {
+        color: #333;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 0.9em;
+        cursor: pointer;
+      }
+      .dropdown-section {
+        ul {
+          list-style: none;
+        }
+        li {
+          text-transform: capitalize;
+          padding: 0.7em 0;
+          border-bottom: 1px solid rgb(230, 228, 228);
+          cursor: pointer;
+          &:hover {
+            background-color: #ebf1ff;
+          }
+        }
+
+        .no-results {
+          color: #707e80;
+        }
+        .section-title {
+          margin-bottom: 0.5em;
+          color: #707e80;
+          font-weight: 600;
+          font-size: 0.9em;
+        }
       }
     }
   }
   &__search {
-    flex: 5;
+    flex: 6;
     // flex-basis: 60%;
     // background-color: aquamarine;
     display: flex;
     align-items: center;
+    // padding: 0.6em 1em;
     .search-text {
       width: 100%;
       .search {

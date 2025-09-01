@@ -1,0 +1,119 @@
+// .location-selector {
+//   /* Wraps the entire component */
+//   position: relative; /* Needed for dropdown absolute positioning */
+//   width: 280px; /* Fixed width for the input */
+
+//   .location-input {
+//     /* Styles the input container (where map icon, input field, and arrow sit) */
+//     border: 1px solid #cccccc; /* Light gray border around input */
+//     padding: 0.9em 1rem; /* Inner spacing */
+//     border-radius: 6px; /* Rounded corners */
+//     background: #fff; /* White background */
+//     display: flex; /* Flexbox to align children horizontally */
+//     align-items: center; /* Vertically center contents */
+//     justify-content: space-between; /* Space between input text and arrow */
+//     cursor: text; /* Cursor looks like typing field */
+
+//     input {
+//       /* Actual text input field */
+//       border: none; /* Remove default browser border */
+//       outline: none; /* Remove focus outline */
+//       flex: 1; /* Take up available space in flexbox */
+//       margin-left: 0.5rem; /* Small gap after map icon */
+//       font-size: 0.9rem; /* Text size */
+//       color: #333; /* Dark gray text */
+//     }
+
+//     .icon {
+//       /* The map marker icon (FiMapPin) */
+//       color: #007bff; /* Blue color */
+//       font-size: 1rem; /* Medium size */
+//     }
+
+//     .arrow {
+//       /* The dropdown arrow (FiChevronDown / FiChevronUp) */
+//       font-size: 1.3rem; /* Slightly larger than text */
+//       color: #333; /* Gray color */
+//       margin-left: 0.5rem; /* Space between input and arrow */
+//       transition: transform 0.2s ease; /* Smooth animation when rotating */
+//     }
+//   }
+
+//   .location-dropdown {
+//     /* Dropdown list that appears when clicking the input */
+//     position: absolute; /* Positioned relative to parent (.location-selector) */
+//     top: 110%; /* Place just below the input */
+//     left: 0; /* Align left with input */
+//     width: 100%; /* Same width as input */
+//     background: #fff; /* White dropdown background */
+//     border: 1px solid #ccc; /* Light border */
+//     border-radius: 6px; /* Rounded corners */
+//     margin-top: 0.3rem; /* Small gap below input */
+//     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12); /* Subtle shadow */
+//     z-index: 1000; /* Keep above other elements */
+//     max-height: 240px; /* Limit dropdown height */
+//     overflow-y: auto; /* Enable scroll if too many options */
+
+//     .dropdown-header {
+//       /* Top section of dropdown (Current location + See all) */
+//       display: flex; /* Layout horizontally */
+//       justify-content: space-between; /* Push items to ends */
+//       padding: 0.6rem 1rem; /* Spacing inside */
+//       border-bottom: 1px solid #eee; /* Light separator */
+//       font-size: 0.85rem; /* Slightly smaller text */
+//       color: #007bff; /* Blue by default */
+
+//       .current-location {
+//         /* "Use current location" text */
+//         cursor: pointer; /* Clickable */
+//         font-weight: 500; /* Semi-bold */
+//       }
+
+//       .see-all {
+//         /* "See all" option on the right */
+//         color: #333; /* Darker text */
+//         font-weight: 500; /* Semi-bold */
+//         cursor: pointer; /* Clickable */
+//       }
+//     }
+
+//     .dropdown-section {
+//       /* Sections inside dropdown (like Popular, Cities, etc.) */
+//       padding: 0.6rem 1rem;
+
+//       .section-title {
+//         /* Title like "POPULAR LOCATIONS" */
+//         font-size: 0.8rem; /* Small */
+//         font-weight: bold; /* Bold for emphasis */
+//         margin-bottom: 0.4rem; /* Space below */
+//         color: #555; /* Medium gray */
+//       }
+
+//       ul {
+//         /* List of options */
+//         list-style: none; /* Remove bullets */
+//         margin: 0;
+//         padding: 0;
+
+//         li {
+//           /* Each location item */
+//           padding: 0.5rem 0; /* Vertical spacing */
+//           border-bottom: 1px solid #f2f2f2; /* Light divider */
+//           cursor: pointer; /* Clickable */
+//           transition: background 0.2s; /* Smooth hover effect */
+
+//           &:hover {
+//             background: #f8f8f8; /* Light gray hover */
+//           }
+//         }
+//       }
+
+//       .no-results {
+//         /* Message shown if no location matches search */
+//         font-size: 0.85rem; /* Medium-small text */
+//         color: #999; /* Light gray */
+//         padding: 0.5rem 0; /* Vertical spacing */
+//       }
+//     }
+//   }
+// }
