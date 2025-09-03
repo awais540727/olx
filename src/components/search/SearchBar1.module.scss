@@ -1,8 +1,11 @@
 .searchbar {
   //   background-color: aqua;
-  padding: 1em 2em;
+  padding: 1.5em 2em;
   display: flex;
   max-width: 100%;
+  // background-color: #3a77ff;
+  margin-bottom: 3em;
+  border-bottom: 1px solid gray;
   gap: 1em;
   //   align-items: center;
   .locationSelector {
@@ -21,6 +24,7 @@
       }
       &__icon {
         color: #3a77ff;
+        cursor: pointer;
       }
       &__input {
         margin-left: 0.5em;
@@ -34,6 +38,7 @@
       }
       &__arrow {
         font-size: 1.2em;
+        cursor: pointer;
       }
     }
     &__dropdown {
