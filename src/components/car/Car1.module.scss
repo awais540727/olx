@@ -48,7 +48,7 @@
       transform: translateX(100%);
     }
     &:hover {
-      color: white;
+      //   color: white;
     }
   }
   &__btn2 {
@@ -110,6 +110,33 @@
     }
     &:hover {
       //   color: white;
+    }
+  }
+  &__btn4 {
+    border: 1px solid rgb(194, 190, 190);
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      //   background-color: rgba($color: #a02626, $alpha: 0.8);
+      background-color: aqua;
+      z-index: -1;
+      transform: translateX(0%);
+      transition: all 0.5s ease;
+    }
+    &:hover::before {
+      transform: translateX(-100%);
     }
   }
 }
